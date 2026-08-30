@@ -1,0 +1,114 @@
+/* assets/css/custom.css - Wifian Solution Brand Theme */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --wifian-navy: #333;
+    --wifian-blue: #333;
+    --wifian-sky: #333;
+    --wifian-cyan: #333;
+    --wifian-red: #333;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f8fafc;
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f5f9;
+}
+::-webkit-scrollbar-thumb {
+    background: #94a3b8;
+    border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #1e3a8a;
+}
+
+/* Brand Palette Button Classes */
+.btn-wifian-primary {
+    background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 100%);
+    color: #ffffff;
+    box-shadow: 0 4px 14px 0 rgba(30, 58, 138, 0.35);
+}
+.btn-wifian-primary:hover {
+    background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%);
+}
+
+.btn-wifian-danger {
+    background: linear-gradient(135deg, #dc2626 0%, #ef4444 100%);
+    color: #ffffff;
+    box-shadow: 0 4px 14px 0 rgba(220, 38, 38, 0.35);
+}
+.btn-wifian-danger:hover {
+    background: linear-gradient(135deg, #991b1b 0%, #dc2626 100%);
+}
+
+/* Glassmorphism & Card Enhancements */
+.glass-card {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(226, 232, 240, 0.8);
+}
+
+.shadow-subtle {
+    box-shadow: 0 4px 20px -2px rgba(15, 23, 42, 0.05);
+}
+
+/* Print Styling for Reports */
+@media print {
+    body {
+        background-color: #ffffff !important;
+        color: #000000 !important;
+        font-size: 12pt;
+    }
+
+    .no-print,
+    header,
+    aside,
+    nav,
+    .btn-action,
+    .dataTables_length,
+    .dataTables_filter,
+    .dataTables_paginate,
+    .dataTables_info,
+    #sidebar,
+    #topbar {
+        display: none !important;
+    }
+
+    main {
+        margin: 0 !important;
+        padding: 0 !important;
+        width: 100% !important;
+    }
+
+    .print-only {
+        display: block !important;
+    }
+
+    .card, table {
+        box-shadow: none !important;
+        border: 1px solid #cbd5e1 !important;
+    }
+
+    table {
+        width: 100% !important;
+        border-collapse: collapse !important;
+    }
+
+    th, td {
+        border: 1px solid #94a3b8 !important;
+        padding: 8px !important;
+    }
+}
+
+.print-only {
+    display: none;
+}

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 355 120" width="100%" height="100%">
+  <style>
+    .wave-line { fill: none; stroke: #38bdf8; stroke-width: 4; }
+    .text-wifian { fill: #1e3a8a; font-family: 'Arial Black', 'Inter', 'Segoe UI', sans-serif; font-weight: 900; font-size: 34px; font-style: italic; letter-spacing: 0.5px; }
+    .text-solution { fill: #dc2626; font-family: 'Arial Black', 'Inter', 'Segoe UI', sans-serif; font-weight: 900; font-size: 38px; letter-spacing: 0.5px; }
+  </style>
+  
+  <!-- 3 Inclined Oval Wave Loops -->
+  <g>
+    <ellipse cx="50" cy="60" rx="36" ry="52" class="wave-line" transform="rotate(-22, 50, 60)" />
+    <ellipse cx="65" cy="60" rx="36" ry="52" class="wave-line" transform="rotate(-22, 65, 60)" />
+    <ellipse cx="80" cy="60" rx="36" ry="52" class="wave-line" transform="rotate(-22, 80, 60)" />
+  </g>
+
+  <!-- WIFIAN Text (Navy Blue Italic) -->
+  <text x="130" y="52" class="text-wifian">WIFIAN</text>
+  
+  <!-- SOLUTION Text (Vibrant Red) -->
+  <text x="130" y="96" class="text-solution">SOLUTION</text>
+</svg>
